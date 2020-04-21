@@ -1,0 +1,31 @@
+$size-1: .875em;
+$size-2: 1.5em;
+$size-3: 3em;
+
+%text {
+    font-size: $size-2;
+    line-height: 132.1%;
+    letter-spacing: -.02em;
+    font-weight: 500;
+}
+
+%typo-format {
+    &::first-letter {
+        text-transform: capitalize;
+    }
+}
+
+%large-header {
+    font-size: $size-3;
+    font-weight: 900;
+    letter-spacing:  -.03em;
+    line-height: 102.8%;
+}
+
+%bottom-padding {
+    padding-bottom: 1em;
+}
+
+%wrapping-padding {
+    padding: 24px;
+}

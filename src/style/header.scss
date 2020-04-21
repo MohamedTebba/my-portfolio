@@ -1,0 +1,17 @@
+@import './colors.scss';
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-image: linear-gradient(180deg,#181818 30%,rgba(24,24,24,.5) 63%,rgba(24,24,24,0));
+
+    .logo{
+        width: 60px;
+        height: 60px;
+        background-color: $color-hex-7;
+        margin-left: 16px;
+    }
+}

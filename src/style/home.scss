@@ -1,0 +1,45 @@
+@import './colors.scss';
+@import './standards.scss';
+
+.home {
+    overflow: hidden;
+    position: relative;
+    background-color: $color-hex-1;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__hero{
+        margin-top: 76px;
+        width: 259px;
+
+        @media(min-width: 480px) {
+            width: 380px;
+        }
+
+        @extend %wrapping-padding;
+        display: flex;
+        flex-direction: column;
+        
+        &>:first-child {
+            @extend %large-header;
+            @extend %typo-format;
+            @extend %bottom-padding;
+            color: $color-hex-5;
+            font-family: 'playfair display';
+        }
+    
+        &>:last-child {
+            color: $color-hex-2;
+            // @extend %header;
+            @extend %text;
+
+            i {
+                font-style: normal;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,15 @@
+@import './colors.scss';
+
+.loading-screen {
+    height: 100vh;
+    background-color: $color-hex-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo{
+        color: $color-hex-2;
+        font-size: 12em;
+        font-weight: bold;
+    }
+}
